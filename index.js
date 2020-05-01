@@ -3,9 +3,17 @@ const app = express();
 const port = 8080;
 const epxressLayouts = require('express-ejs-layouts');
 
+// middleware for static files
+app.use(express.static('./assets'));
+
+// middleware for layouts
 app.use(epxressLayouts);
 
-// middleware to use express router
+// extract styles and scripts from subpages into the layout
+app.set('layout extractStyles', true);
+app.set('layout extractScripts', true);
+
+// middleware to use express routes
 app.use('/', require('./routes'));
 
 // set up view engine
