@@ -1,10 +1,19 @@
 const express = require('express');
+// cookie parser
+const cookieParser = require('cookie-parser');
 const app = express();
 const port = 8080;
 // import layouts
 const epxressLayouts = require('express-ejs-layouts');
 // import db
-const db = require('./config/mongoose')
+const db = require('./config/mongoose');
+
+
+// for handling post requests
+app.use(express.urlencoded({ extended: true }));
+
+// setting up the cookie parser
+app.use(cookieParser());
 
 // for static files
 app.use(express.static('./assets'));

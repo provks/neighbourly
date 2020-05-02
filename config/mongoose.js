@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // local mongodb connection
 // mongoose.connect('mongodb://localhost/neighbourly_development');
 // atlas mongodb connection
-mongoose.connect('mongodb+srv://provks:1234@cluster0-vx20s.mongodb.net/neightbourly_development?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://provks:1234@cluster0-vx20s.mongodb.net/neighbourly_development?retryWrites=true&w=majority', {
     useUnifiedTopology: true, 
     useNewUrlParser: true 
 });
