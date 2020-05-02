@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
 const port = 8080;
+// import layouts
 const epxressLayouts = require('express-ejs-layouts');
+// import db
+const db = require('./config/mongoose')
 
-// middleware for static files
+// for static files
 app.use(express.static('./assets'));
 
 // middleware for layouts
