@@ -23,7 +23,7 @@ module.exports.create = function(req, res){
     //TODO later
 }
 
-// Get Sign In date
+// Sign In and create session for the user
 module.exports.createSession = function(req, res){
     //TODO later
 }

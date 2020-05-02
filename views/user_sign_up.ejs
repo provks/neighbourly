@@ -1,41 +1,48 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<div class="contaier">
-  <div class="row justify-content-center align-items-center">
-    <div class="col-lg-5 bg-info py-4 text-white">
-      <h1 class="text-center">Sign Up</h1>
-      <form action="/users/create" method="POST">
-        <div class="form-group row">
-            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="name" id="inputName" placeholder="Name" required>
-            </div>
-          </div>
-        <div class="form-group row">
-          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Password" required>
-          </div>
-        </div>
-        <div class="form-group row">
-            <label for="confirmPassword" class="col-sm-2 col-form-label">Confirm Password</label>
-            <div class="col-sm-10">
-              <input type="password" class="form-control" name="confirm_password" id="confirmPassword" placeholder="Confirm Password" required>
-            </div>
-          </div>
-        <div class="form-group row text-right">
-          <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </div>
-        </div>
-      </form>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/user_sign_up.css">
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Sign Up</h3>
+              <form ction="/users/create" method="POST">
+                <div class="form-label-group">
+                  <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-label-group">
+                  <input type="text" id="userName" class="form-control" placeholder="Name" required autofocus>
+                  <label for="userName">Name</label>
+                </div>
 
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+                <div class="form-label-group">
+                  <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
+                  <label for="confirmPassword">Confirm Password</label>
+                </div>
+
+                <!-- <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
+                </div> -->
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                <div class="text-right">
+                  <a class="small" href="./user_sign_in.ejs">Already a user? Log In</a>
+                </div>                  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
