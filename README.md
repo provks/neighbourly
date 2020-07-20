@@ -1,6 +1,6 @@
 # Neighbourly
 
-* Want to know, what's the hots-pot in your neighbourhood? 
+* Want to know, what's the hot-spot in your neighbourhood? 
 * Which salon is the best in your neighbourhood? 
 * Which place is best to hang out with friends? 
 * Where the food tastes the best? Which club has an epic crowd? 
